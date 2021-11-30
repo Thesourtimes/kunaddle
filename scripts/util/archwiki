@@ -1,0 +1,3 @@
+#!/bin/bash
+
+lynx wiki.archlinux.org

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+scrot -s '/home/kuna/Pictures/Screenshots/Screenshot.png' -e 'xclip -selection clipboard -t image/png -i $f'
+
+         
