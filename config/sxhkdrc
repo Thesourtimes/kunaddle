@@ -1,0 +1,4 @@
+super + {s, v, r, k, f, e}
+	{myscrot, st lf, st newsboat, st abook, firefox, st neomutt}
+super + alt + {l, m, h}
+	{slock, st mandb, st htop}
