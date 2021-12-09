@@ -59,8 +59,8 @@ picom -f --config /home/kuna/.config/picom.config &
 # Wallpaper
 xwallpaper --stretch Pictures/wallpaper.jpg &
 
-# DWM
-exec dwm &
+# DWMBlocks
+exec dwmblocks &
 
 # sxhkd
 sxhkd &
@@ -68,5 +68,5 @@ sxhkd &
 # Unclutter
 unclutter --timeout 60 &
 
-# DWMBlocks
-exec dwmblocks 
+# DWM
+exec dwm
