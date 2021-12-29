@@ -1,6 +1,6 @@
-.dotfiles
+sourrice
 ===
 
-This repository contains my newly organised dotfiles and other system utils such as scripts, services etc.
+This system isn't mean to fit you and It's not for general usage either.
 
-Even if it doesn't really matters for now, These are made for Arch Linux.
+Even if it doesn't really matters for now, These are made for Arch Linux and that might cause problems on other distros.

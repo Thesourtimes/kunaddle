@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo	"Ran sb-mute"
+
+if [ $(pamixer --get-mute) = 'false' ]; then
+	pamixer -m
+	else
+	pamixer -u
+fi

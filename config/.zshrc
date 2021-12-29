@@ -98,12 +98,10 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
  alias zshconfig="vim ~/.zshrc"
-# alias firefox='firefox-developer-edition'
  alias ohmyzsh="vim ~/.oh-my-zsh"
- alias  grubmk='sudo grub-mkconfig -o /boot/grub/grub.cfg'
- alias weather="curl wttr.in"
-# alias myscrot="scrot -s '/home/kuna/Pictures/Screenshots' -e 'xclip -selection clipboard -t image/png -i $f' "
-
+# alias sudo="doas"
+ alias  grubmk='doas grub-mkconfig -o /boot/grub/grub.cfg'
+ 
 
 
  export PATH="/home/kuna/.local/bin:$PATH"
