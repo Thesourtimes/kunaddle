@@ -1,0 +1,8 @@
+#!/bin/sh
+
+
+cp -r config "~/.config"
+cp -r "local" "~/.local"
+cp .xinirc $HOME
+cp .zprofile $HOME
+cp .zshrc $HOME

@@ -1,0 +1,13 @@
+[Default Applications]
+x-scheme-handler/tg=userapp-Telegram Desktop-W7WEC1.desktop
+image/png=sxiv.desktop
+application/pdf=org.pwmt.zathura.desktop
+inode/directory=lf.desktop
+image/jpg=sxiv.desktop
+images/jpg=sxiv.desktop
+image/jpeg=sxiv.desktop
+application/exe=wine.desktop
+application/.exe=wine.desktop
+
+[Added Associations]
+x-scheme-handler/tg=userapp-Telegram Desktop-W7WEC1.desktop;

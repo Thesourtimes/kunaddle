@@ -1,0 +1,11 @@
+
+# some dotfiles with credidentals
+
+config/MyMonero
+config/filezilla
+
+config/browsh/firefox_profile
+config/cef_user_data
+
+
+# locals
