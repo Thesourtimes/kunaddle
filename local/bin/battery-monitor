@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Checks the battery percentage and applies the preset actions,
+
+export BAT_PER="$(cat /sys/class/power_supply/BAT0/capacity)"
+export BAT_REG_CONF="$(cat /etc/*)"
+
+
+
+if [BAT_PER]

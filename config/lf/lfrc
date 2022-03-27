@@ -1,11 +1,19 @@
+set shell zsh
+
 set shellopts '-eu'
 set ifs "\n"
 set scrolloff 10
 set icons
+set info size:time
 set period 1
 set previewer 
 set previewer '~/.config/lf/scope'
+set drawbox
 
+# key mappings
+map <enter> shell
+
+# Commands
 cmd open ${{
     case $(file --mime-type "$(readlink -f $f)" -b) in
 	application/vnd.openxmlformats-officedocument.spreadsheetml.sheet) localc $fx ;;

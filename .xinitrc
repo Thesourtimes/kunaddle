@@ -4,4 +4,4 @@ picom -f --config "$XDG_CONFIG_HOME/picom.config" &
 xwallpaper --stretch $X_WALLPAPER &
 exec dwmblocks &
 unclutter --timeout 60 &
-exec dwm > $HOME/.dwm.log 
+DISPLAY=LVDS-1 exec dwm > $HOME/.dwm.log 
