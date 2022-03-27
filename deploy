@@ -3,6 +3,4 @@
 
 cp -rv config/* ~/.config
 cp -rv local/* ~/.local
-cp -v .xinitrc $HOME
-cp -v .zprofile $HOME
-cp -v .zshrc $HOME
+rsync -v --exclude=".git*" .* ~/
