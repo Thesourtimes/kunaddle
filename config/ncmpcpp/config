@@ -1,0 +1,22 @@
+# vim: filetype=conf
+# Define filetype
+
+# Basics
+ncmpcpp_directory = "~/.config/ncmpcpp"
+lyrics_directory = "~/.local/share/lyrics"
+startup_screen = "media_library"
+
+# mpd-specific settings
+
+mpd_music_dir = "~/Music"
+
+# Deeper configurations
+# =====================
+
+external_editor = nvim
+use_console_editor = yes
+statusbar_color = blue
+
+# Visualizer stuff
+
+visualizer_type = "spectrum"

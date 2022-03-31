@@ -4,3 +4,5 @@
 cp -rv config/* ~/.config
 cp -rv local/* ~/.local
 rsync -v --exclude=".git*" .* ~/
+
+notify-send -u critical Done!
