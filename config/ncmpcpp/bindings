@@ -154,11 +154,18 @@
 ##  - load
 ##
 #
+#
 #def_key "mouse"
 #  mouse_event
 #
 #def_key "up"
 #  scroll_up
+#
+#def_key "j"
+#  scroll_down
+#
+#def_key "k"
+#  scrooll_up
 #
 #def_key "shift-up"
 #  select_item

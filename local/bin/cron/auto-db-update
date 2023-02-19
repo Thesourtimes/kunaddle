@@ -1,0 +1,4 @@
+#
+
+echo    "Updating Pacman databases :3"
+sudo pacman -Sy

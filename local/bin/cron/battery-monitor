@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# watch --interval=5
+
+CAPACITY=$(cat /sys/class/power_supply/BAT0/capacity)
+STATUS=$(cat /sys/class/power_supply/BAT0/status)
+
+if [[ (${CAPACITY} > 80) && (${STATUS} == "Charging")]]
+then
+  /usr/bin/notify-send -u critical "Battery" "Disconnect Charger. Battery is above 80%"
+elif [[ (${CAPACITY} < 20) && (${STATUS} == "Discharging")]]
+then
+  /usr/bin/notify-send -u critical "Connect Charger. Battery" "Battery is below 20%"
+fi
