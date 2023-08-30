@@ -1,22 +1,24 @@
 #!/bin/zsh
 
 
+
 export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
+export PATH="$PATH:${$(find ~/.local/bin/* -type d -printf %p:)%%:}"
 
 unsetopt PROMPT_SP
 
 # Envars
 export DEBUGINFOD_URLS="https://debuginfod.archlinux.org/"
-
+export QT_QPA_PLATFORMTHEME=qt5ct
 export VOICE_BUFF="3"
 export BACKLIGHT_BUFF="10"
 
-export X_WALLPAPER="$HOME/Pictures/wallpaper.jpg"
+export X_WALLPAPER="$HOME/Pictures/wallpaper-archive/wallpaper1.jpg"
 
 # Default programs:
 export EDITOR="nvim"
-export TERMINAL="st"
-export BROWSER="firefox"
+export TERMINAL="alacritty"
+export BROWSER="brave"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"

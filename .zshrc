@@ -1,4 +1,6 @@
-export ZSH="/home/kuna/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
+export AWT_TOOLKIT=MToolkit
+export JAVA_AWT_WM_NONREPARENTING=1
 
 ZSH_THEME="daveverwer"
 
@@ -23,14 +25,15 @@ plugins=(git fast-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
-alias grubmk='doas grub-mkconfig -o /boot/grub/grub.cfg'
-alias vi='nvim'
-alias vim='nvim'
-
-export PATH="/home/kuna/.local/bin:$PATH"
-export STEAM_COMPAT_CLIENT_INSTALL_PATH=".local/share/Steam"
-
-export PNPM_HOME="/home/kuna/.local/share/pnpm"
+alias zshconfig="$EDITOR ~/.zshrc"
+alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
+alias grubmk='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+alias vi='$EDITOR'
+alias vim='$EDITOR'
+alias monero="monero-wallet-gui"
+alias ssh='TERM=xterm-256color ssh'
+alias dosbox="dosbox-x"
+alias booster_regen="sudo /usr/lib/booster/regenerate_images"
+export PATH="~/.local/bin:$PATH"
+export PNPM_HOME="~/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"

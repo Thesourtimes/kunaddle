@@ -26,10 +26,6 @@ set cursorline
 set expandtab
 
 " NERDTree
-" Start NERDTree and put the cursor back in the other window.
-autocmd VimEnter * NERDTree | wincmd p
-" Open the existing NERDTree on each new tab.
-autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
 " Close the tab if NERDTree is the only window remaining in it.
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
@@ -37,6 +33,12 @@ nnoremap <leader>tt :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 " nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+
+
+let g:ale_completion_enabled = 1
+set omnifunc=ale#completion#OmniFunc
+nnoremap <leader>dd <cmd> omnifunc<cr>
+
 
 "" Theme
 colorscheme habamax  " Default theme (change here for your preference)
@@ -77,6 +79,7 @@ endif
 
 call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"'))
 
+Plug 'dense-analysis/ale'
 Plug 'tyru/open-browser.vim' " opens url in browser
 Plug 'tpope/vim-surround' " Surrounding ysw)
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
