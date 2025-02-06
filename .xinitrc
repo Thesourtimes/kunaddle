@@ -3,15 +3,9 @@ setxkbmap tr &
 #pipewire &
 #pipewire-pulse &
 #wireplumber &
-mpd &
 picom -f --config "$XDG_CONFIG_HOME/picom.config" &
-xwallpaper --stretch $X_WALLPAPER &
+xwallpaper --stretch "$HOME/Pictures/wallpaper.jpg" &
 exec dwmblocks &
-unclutter --timeout 60 &
-xss-lock slock &
-rpiplay -n "Apple TV" &
-/usr/lib/kdeconnectd &
-batsignal &
-dunst &
+#unclutter --timeout 60 &
 wmname LG3D &
 exec dwm

@@ -13,7 +13,7 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 export VOICE_BUFF="3"
 export BACKLIGHT_BUFF="10"
 
-export X_WALLPAPER="$HOME/Pictures/wallpaper-archive/wallpaper1.jpg"
+export X_WALLPAPER="$HOME/Pictures//wallpaper.jpg"
 
 # Default programs:
 export EDITOR="nvim"
